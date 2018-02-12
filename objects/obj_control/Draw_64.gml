@@ -11,12 +11,17 @@ draw_set_colour(c_white);
 draw_set_font(fnt_status);
 draw_text(880, 712, "Lvl. " + string(global.lvl));
 draw_text(875, 727, "Freq. " + string(obj_player.freq));
-	
+
+//Draw text for GUI messages
+draw_set_font(fnt_notify);
+if (nDisplay == true)
+	draw_text(view_hview/2, 200, sMessage);
+
 display_set_gui_size(1024, 768);
 
 //Draw dialogue
-draw_set_colour(c_black);
-draw_set_font(fnt_chat);
+//draw_set_colour(c_black);
+//draw_set_font(fnt_chat);
 /*if (obj_player.introChat == true){
 draw_text(obj_player.x + 100, obj_player.y + 100, "They found me!");
 draw_text(obj_player.x + 100, obj_player.y + 112, "I have to escape!");

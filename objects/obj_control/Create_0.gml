@@ -1,4 +1,7 @@
 /// @description Begin spawns.
+sMessage = "";
+nDisplay = false;
+
 global.xRate = 20;
 global.xLimit = 10;
 obj_player.introChat = true;
