@@ -6,6 +6,7 @@ if global.endGame != false return;
 
 if (global.hp < old_hp && !alarm[0]){
 	alarm[0] = room_speed / 4;
+	audio_play_sound(snd_pc_dmg, 10, false);
 	sprite_index = spr_pc_hrt;
 }
 
@@ -38,12 +39,12 @@ if (mouse_button = mb_left && global.en > 1)
    {
    if firing_taser == false{
         firing_taser = true;	   		
-		instance_create_layer(obj_player.x, obj_player.y - 7, "Projectiles", obj_lightning);
+		instance_create_layer(obj_player.x, obj_player.y - 45, "Projectiles", obj_lightning);
 		}
 	with(obj_lightning){
 		image_angle = point_direction(x, y, mouse_x, mouse_y);  
 		x = obj_player.x;
-		y = obj_player.y - 7;
+		y = obj_player.y - 45;
 		}
    sprite_index = spr_pc_aim;
    global.en -= 4;
