@@ -26,13 +26,14 @@ draw_sprite(spr_crowbar, spr_crowbar, 550, 745);
 
 //The following only happens when the player dies.
 if obj_player.playerIsDead == true{
-	draw_sprite(spr_ui_popup, spr_ui_popup, view_wview[0]/2, view_hview[0]/2);
-
+	draw_sprite(spr_ui_popup, spr_ui_popup, display_get_gui_width()/2, display_get_gui_height()/2);
+	draw_set_colour(c_white);
+	draw_set_font(fnt_status);
 	draw_text(460, 440, "R - Restart");
 	draw_text(570, 440, "Q - Quit");
 
 	draw_set_font(fnt_notify);
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
-	draw_text(view_wview[0]/2, view_hview[0]/2, "You died!");
+	draw_text(display_get_gui_width()/2, display_get_gui_height()/2, "You died!");
 }

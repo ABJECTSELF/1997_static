@@ -10,14 +10,16 @@ if distance_to_object(obj_player) < vision && distance_to_object(obj_player) > 5
 	move_towards_point(obj_player.x, obj_player.y, myspeed)
 }
 else if distance_to_object(obj_player) >= vision {
-//Wander
-move_towards_point(rdmx, rdmy, myspeed);
-}
-else
-speed = 0;
+	//Wander
+	if (distance_to_point(rdmx,rdmy)>3)
+		move_towards_point(rdmx, rdmy, myspeed);
+	else
+		speed = 0;
+	}
 
 //When close, attack player.
 if (distance_to_object(obj_player) <= 7){
+	speed=0;
 	if (isAttacking == false){
 		alarm[1] = attackRate*room_speed
 		isAttacking = true;

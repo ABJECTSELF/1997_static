@@ -6,19 +6,20 @@ if (tazed = true){
 	return;
 }
 
-if distance_to_object(obj_player) < vision && distance_to_object(obj_player) > 5 &&  myhp > 0{
-	move_towards_point(obj_player.x, obj_player.y, myspeed)
+if distance_to_object(obj_player) < vision && distance_to_object(obj_player) > attack_range &&  myhp > 0{
+	move_towards_point(obj_player.x, obj_player.y, myspeed);
 }
 else if distance_to_object(obj_player) >= vision {
-//Wander
-move_towards_point(rdmx, rdmy, myspeed);
-}
-else
-speed = 0;
-
+	//Wander
+	if (distance_to_point(rdmx,rdmy)>3)
+		move_towards_point(rdmx, rdmy, myspeed);
+	else
+		speed = 0;
+	}
 //
-//When close, attack player.
-if (distance_to_object(obj_player) <= 7){
+//When close, fire obj_bullet
+if (distance_to_object(obj_player) <= attack_range){
+	speed=0;
 	if (isAttacking == false){
 		alarm[1] = attackRate*room_speed
 		isAttacking = true;

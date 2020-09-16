@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Initiate Wander behavior
 
 rdmx = 0;
 rdmy = 0;
