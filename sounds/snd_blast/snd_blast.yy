@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.03,
+  "volume": 0.5,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_rain",
-  "duration": 4.035476,
+  "soundFile": "snd_blast.mp3",
+  "duration": 4.393571,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_rain",
+  "name": "snd_blast",
   "tags": [],
   "resourceType": "GMSound",
 }

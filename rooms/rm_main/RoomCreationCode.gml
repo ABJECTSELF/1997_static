@@ -1,7 +1,7 @@
 globalvar en;
 en = 100;
 globalvar hp;
-hp = 10;
+hp = clamp(hp, 0, 10);
 globalvar xRate;
 xRate = 10;
 globalvar fndCrowbar;
@@ -14,6 +14,9 @@ globalvar lvl;
 lvl = 1;
 globalvar maxEn;
 maxEn = 100;
+//Max length for tazer projectile.
+globalvar maxLen;
+maxLen = 0.5;
 globalvar endGame;
 endGame = false;
 audio_play_sound(snd_rain, 5, true);

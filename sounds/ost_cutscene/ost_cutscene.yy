@@ -1,6 +1,6 @@
 {
-  "compression": 0,
-  "volume": 0.03,
+  "compression": 3,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_rain",
-  "duration": 4.035476,
+  "soundFile": "ost_cutscene",
+  "duration": 176.82785,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_rain",
+  "name": "ost_cutscene",
   "tags": [],
   "resourceType": "GMSound",
 }
