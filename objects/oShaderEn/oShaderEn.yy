@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_itm_bolt",
-    "path": "sprites/spr_itm_bolt/spr_itm_bolt.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -20,15 +17,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"oShaderEn","path":"objects/oShaderEn/oShaderEn.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Items",
-    "path": "folders/Objects/Items.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_upgrade",
+  "name": "oShaderEn",
   "tags": [],
   "resourceType": "GMObject",
 }

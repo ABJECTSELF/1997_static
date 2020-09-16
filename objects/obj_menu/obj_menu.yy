@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_itm_bolt",
-    "path": "sprites/spr_itm_bolt/spr_itm_bolt.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -11,7 +8,7 @@
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 0,
+  "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -20,15 +17,18 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Items",
-    "path": "folders/Objects/Items.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_upgrade",
+  "name": "obj_menu",
   "tags": [],
   "resourceType": "GMObject",
 }

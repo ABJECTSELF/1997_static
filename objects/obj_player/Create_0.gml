@@ -1,6 +1,6 @@
 /// @description Player
-globalvar hp;
-global.hp = 10;
+//globalvar hp;
+//global.hp = 10;
 firing_taser = false;
 freq = 1;
 mySpeed = 5;

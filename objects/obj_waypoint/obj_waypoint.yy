@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_itm_bolt",
-    "path": "sprites/spr_itm_bolt/spr_itm_bolt.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -24,11 +21,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Items",
-    "path": "folders/Objects/Items.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_upgrade",
+  "name": "obj_waypoint",
   "tags": [],
   "resourceType": "GMObject",
 }
